@@ -37,4 +37,5 @@ export class Personagem{
         this._armaEquipada = arma;
     }
 
+
 }

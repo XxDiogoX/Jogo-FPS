@@ -5,5 +5,6 @@ export class Jogador extends Personagem{
         super(nome,vida,armaEquipada,granada);
 
     }
-
+    
+    
 }

@@ -9,4 +9,29 @@ export class Personagem{
             this._granada = granada;
         }
     }
+
+    get nome(){
+        return this._nome;
+    }
+
+    get vida(){
+        return this._vida;
+    }
+
+    get armaEquipada(){
+        return this._armaEquipada;
+    }
+
+    get granada(){
+        return this._granada;
+    }
+
+    set vida(dano){
+        this._vida =- dano;
+    }
+
+    set armaEquipada(arma){
+        this._armaEquipada = arma;
+    }
+
 }

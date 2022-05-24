@@ -27,7 +27,10 @@ export class Personagem{
     }
 
     set vida(dano){
-        this._vida =- dano;
+        this._vida = this._vida - dano;
+        if(this._vida < 0 || this._vida == 0){
+            this._vida = 0;
+        }
     }
 
     set armaEquipada(arma){

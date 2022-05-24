@@ -9,4 +9,31 @@ export class Armas{
             this._dano = dano;
         }
     }
+
+    get nome(){
+        return this._nome;
+    }
+
+    get calibre(){
+        return this._calibre;
+    }
+
+    get quantidadeMunicao(){
+        return this._quantidadeMunicao;
+    }
+
+    set quantidadeMunicao(quantidade){
+        this._quantidadeMunicao -= quantidade;
+        if(this._quantidadeMunicao == 0 || this._quantidadeMunicao < 0){
+            this._quantidadeMunicao = 0;
+            console.log("Sem munição!!");
+        }
+    }
+
+    get dano(){
+        return this._dano;
+    }
+
+
+   
 }
